@@ -1,4 +1,4 @@
-package com.lc;
+package com.lc.control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,7 +14,7 @@ import com.lc.pojo.User;
 import com.lc.service.UserService;
 import com.lc.service2.impl.UserServiceImpl;
 
-public class SV7 extends HttpServlet {
+public class userControl extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
@@ -27,10 +27,12 @@ public class SV7 extends HttpServlet {
 	    //StudentService studentService = ServiceFactory.getStudentService();
 			
 			List userList = userService.getUserList();
-	
-			toUserList(resp, userList);
+			req.setAttribute("userList", userList);
+	        getServletContext().getRequestDispatcher("/userPrint").forward(req, resp);
+			//toUserList(resp, userList);
 		} catch (Exception e){
-			toError(resp,e.getMessage());
+			getServletContext().getRequestDispatcher("/error").forward(req, resp);
+			//toError(resp,e.getMessage());
 		}
 	}
 		
