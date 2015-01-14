@@ -21,7 +21,7 @@ out.println("    ");
 out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");
 out.println("<html>");
 out.println("	<head>");
-out.println("		<title>达内电子bggg商务门户</title>");
+out.println("		<title>达内电子bgggghh商务门户</title>");
 out.println("		<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">");
 out.println("		<meta name=\"description\" content=\"达内电子商务门户\">");
 out.println("		<link href=\"./css/tarena.css\" rel=stylesheet>");
