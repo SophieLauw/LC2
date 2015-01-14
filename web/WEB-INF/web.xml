@@ -9,4 +9,102 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+   <servlet>
+    <servlet-name>SV</servlet-name>
+    <servlet-class>com.lc.SV</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV</servlet-name>
+    <url-pattern>/one</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SV1</servlet-name>
+    <servlet-class>com.lc.SV1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV1</servlet-name>
+    <url-pattern>/two</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SV2</servlet-name>
+    <servlet-class>com.lc.SV2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV2</servlet-name>
+    <url-pattern>/three</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SV3</servlet-name>
+    <servlet-class>com.lc.SV3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV3</servlet-name>
+    <url-pattern>/four</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SV4</servlet-name>
+    <servlet-class>com.lc.SV4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV4</servlet-name>
+    <url-pattern>/five</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>SV5</servlet-name>
+    <servlet-class>com.lc.SV5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV5</servlet-name>
+    <url-pattern>/six</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SV6</servlet-name>
+    <servlet-class>com.lc.SV6</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV6</servlet-name>
+    <url-pattern>/seven</url-pattern>
+  </servlet-mapping>
+   
+  
+  <servlet>
+    <servlet-name>SV7</servlet-name>
+    <servlet-class>com.lc.SV7</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV7</servlet-name>
+    <url-pattern>/eight</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SV8</servlet-name>
+    <servlet-class>com.lc.SV8</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV8</servlet-name>
+    <url-pattern>/nine</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SV9</servlet-name>
+    <servlet-class>com.lc.SV9</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SV9</servlet-name>
+    <url-pattern>/ten</url-pattern>
+  </servlet-mapping>
 </web-app>
