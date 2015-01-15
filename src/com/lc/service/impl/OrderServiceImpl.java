@@ -1,4 +1,4 @@
-package com.lc.service2.impl;
+package com.lc.service.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -10,21 +10,40 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>userControl</servlet-name>
-    <servlet-class>com.lc.control.userControl</servlet-class>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>com.lc.web.control.Controller</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>userControl</servlet-name>
-    <url-pattern>/userControl</url-pattern>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>*.action</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>userPrint</display-name>
     <servlet-name>userPrint</servlet-name>
-    <servlet-class>com.lc.print.userPrint</servlet-class>
+    <servlet-class>com.lc.web.view.userPrint</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>userPrint</servlet-name>
-    <url-pattern>/userPrint</url-pattern>
+    <url-pattern>/user</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>orderPrint</display-name>
+    <servlet-name>orderPrint</servlet-name>
+    <servlet-class>com.lc.web.view.orderPrint</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderPrint</servlet-name>
+    <url-pattern>/order</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>errorPrint</servlet-name>
+    <servlet-class>com.lc.web.view.errorPrint</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>errorPrint</servlet-name>
+    <url-pattern>/error</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

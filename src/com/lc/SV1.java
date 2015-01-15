@@ -19,22 +19,19 @@ import com.lc.pojo.Payway;
 import com.lc.pojo.User;
 import com.lc.service.OrderService;
 import com.lc.service.UserService;
-import com.lc.service2.impl.OrderServiceImpl;
-import com.lc.service2.impl.UserServiceImpl;
+import com.lc.service.impl.OrderServiceImpl;
+import com.lc.service.impl.UserServiceImpl;
 
 public class SV1 extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		resp.setContentType("text/html;charset=utf-8");
-		//resp.setCharacterEncoding("utf-8");
 		try{
-			OrderService  orderService = new OrderServiceImpl();
 			
-	    //StudentService studentService = ServiceFactory.getStudentService();
-			
-			List orderList = orderService.getOrderList();
-	
+			OrderService  orderService = new OrderServiceImpl();			
+	    //StudentService studentService = ServiceFactory.getStudentService();			
+			List orderList = orderService.getOrderList();	
 			toOrderList(resp, orderList);
 		} catch (Exception e){
 			toError(resp,e.getMessage());
